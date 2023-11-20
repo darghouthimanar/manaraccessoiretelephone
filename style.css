@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f3f3;
+    font-family: 'Poppins',sans-serif;
+}
+header{
+    background-color: rgba(143, 0, 0, 0.947);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    height: 100px;
+}
+
+.left-section img{
+    width: 25%;
+    padding-left: 10px;
+}
+
+.left-sec img{
+    width: 70%;
+    padding-left: 10px;
+}
+.navigation a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding-left: 30px;
+
+}
+.navigation a:hover{
+    color: rgb(129, 126, 126);
+}
+section{
+    padding: 200px 300px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 30px rgba(1 1 1 /40%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+ 
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-size: 5em;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,rgb(219, 75, 75),rgb(3, 0, 11));
+    position: relative;
+
+}
+.container .box{
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 25px 25px 45px 25px;
+    border-radius: 20px;
+    
+}
+h2{
+    text-align: center;
+    font-size: 44px;
+    margin-bottom: 30px;
+    position: relative;
+    color: rgb(1, 1, 42);
+}
+h2::before{
+    position: absolute;
+    content: '';
+    width: 55px;
+    height: 5px;
+    border-radius:50px ;
+    bottom: -8px;
+
+}
+.box .input_box{
+    width: 100%;
+   position: relative;
+
+}
+.box .input_box input[type="text"]{
+    width: 100%;
+    font-size: 26px;
+    margin: 16px 0px;
+    outline: none;
+    border-width: 0px 0px 2px 0px;
+    border-color: #9b0c58;
+}
+.box .input_box label{
+    position: absolute;
+    left: 0;
+    top: 12px;
+    font-size: 20px;
+    color: #0000009e;
+    pointer-events: none;
+    transition: 0.2s;
+}
+.box .input_box input:focus + label{
+    top:-7px;
+    font-size: 18px;
+    color: blue;
+}
+.box .input_box .password_chechkbox{
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.box .input_box .password_chechkbox p{
+    margin-left: 8px;
+}
+.box .signup_button{
+    width: 100%;
+    background-color: #855c5c;
+    border: none;
+    padding: 10px 16px;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+.box .signup_button:active{
+    transform: scale3d(0.9 ,0.9 ,0.9);
+
+}
+.box .login_link{
+    font-size: 15px;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+.box .login_link a{
+    color: #000;
+    text-decoration: none;
+}
+.box .login_link a:hover{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.info{
+    text-align: center;
+    color: rgb(220, 90, 90);
+}
+
+.details-sub{
+    display: grid;
+    grid-template-columns:auto auto ;
+}
+.details-sub>h5{
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    text-align: right;
+}
+
+.details>p{
+    color: #6f6f6f;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    align-self: stretch;
+}
+.card button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(74, 79, 87);
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 15px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all;
+}
+.card button:hover{
+    transform: scale(1.08);
+
+}
+
+
+
+
+.footer{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+
+}
+.footer-title span{
+    color: rgb(236, 51, 51);
+}
+.footer .social-icons a{
+    font-size: 1.3em;
+    color: #fff;
+    padding: 0 12px 0 0;
+}
